@@ -2,6 +2,6 @@ user_name = "hemanth8705"
 
 def get_details():
     user_name = "hemanth8705"
-    password = "__@@hemanth8705@@__"
+    password = "__________"
 
     return (user_name , password)
