@@ -1,0 +1,9 @@
+webdriver-manager
+flask 
+selenium 
+beautifulsoup4
+tqdm
+tenacity
+pandas
+google-api-python-client
+textblob
