@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Scraper Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Pane: Saved Links -->
+        <div class="left-pane">
+            <h2>Saved Links</h2>
+            <ul id="saved-links">
+                <!-- Links will be dynamically inserted here -->
+            </ul>
+        </div>
+
+        <!-- Right Pane: Google Search Iframe -->
+        <div class="right-pane">
+            <h2>Google Search</h2>
+            <!-- <iframe id="google-iframe" src="https://economictimes.indiatimes.com/news/narendra-modi" frameborder="0"></iframe> -->
+            <input type="text" id="search-query" placeholder="Search news">
+            <button onclick="searchNews()">Search</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

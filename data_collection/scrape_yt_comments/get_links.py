@@ -42,7 +42,7 @@ def get_youtube_links(query):
         
         # Scroll down to load more videos
         driver.execute_script("window.scrollTo(0, 10);")
-        time.sleep(30)  # Allow time for new content to load
+        time.sleep(3)  # Allow time for new content to load
 
         # Exit the loop if the scraping time exceeds 30 seconds
         if len(links) > 10:

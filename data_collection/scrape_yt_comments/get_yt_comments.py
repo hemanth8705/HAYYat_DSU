@@ -1,9 +1,10 @@
 from get_links import get_youtube_links
-
+from youtube_transcript_api import YouTubeTranscriptApi
 from googleapiclient.discovery import build
 import pandas as pd
 import getpass
 from pytube import extract
+import json
 
 entity = 'devara pre release cancel'
 
@@ -43,9 +44,29 @@ def get_replies(youtube, parent_id, video_id):  # Added video_id as an argument
 
 # Function to get all comments (including replies) for a single video
 def get_comments_for_video(youtube, video_id):
-    all_comments = []
+    video_comments = []
     next_page_token = None
+    video_comments.append({
+            'VideoID': video_id ,
+            'comments': [],
+            'srt' : ""
+            })
 
+    # List available transcripts
+    cc = ""
+    try:
+        transcripts = YouTubeTranscriptApi.list_transcripts(video_id)
+        # Print available transcripts
+        for transcript in transcripts:
+            srt = transcript.fetch()
+            
+            for i in srt:
+                cc += i['text'] + " "
+            break
+    except Exception as e:
+        cc += str(e)
+        
+    video_comments[-1]["srt"] += cc
     while True:
         comment_request = youtube.commentThreads().list(
             part="snippet",
@@ -54,24 +75,32 @@ def get_comments_for_video(youtube, video_id):
             textFormat="plainText",
             maxResults=10
         )
-        comment_response = comment_request.execute()
+        try:
+            comment_response = comment_request.execute()
+            
+            print(video_id)
+            for item in comment_response['items']:
+                top_comment = item['snippet']['topLevelComment']['snippet']
+                curr_comment = top_comment['textDisplay']
+                video_comments[-1]["comments"].append([curr_comment])
 
-        for item in comment_response['items']:
-            top_comment = item['snippet']['topLevelComment']['snippet']
-            all_comments.append({
-                'VideoID': video_id,  # Directly using video_id from function parameter
-                'Comment': top_comment['textDisplay']
-            })
+                # Fetch replies if there are any
+                # if item['snippet']['totalReplyCount'] > 0:
+                #     all_comments.extend(get_replies(youtube, item['snippet']['topLevelComment']['id'], video_id))
 
-            # Fetch replies if there are any
-            if item['snippet']['totalReplyCount'] > 0:
-                all_comments.extend(get_replies(youtube, item['snippet']['topLevelComment']['id'], video_id))
-
-        next_page_token = comment_response.get('nextPageToken')
+            next_page_token = comment_response.get('nextPageToken')
+        except Exception as e:
+            print(f"Error fetching comments: {e}")
+            video_comments[-1]["comments"].append(
+                    list(str(e))
+                )
+            break
         if not next_page_token:
             break
+        if len(video_comments[-1]["comments"]) > 20:
+            break
 
-    return all_comments
+    return video_comments
 
 all_comments = []
 def get_comments(link) -> list:
@@ -91,14 +120,17 @@ def get_yt_data(query):
         if i > 3:
             break
 
-    comments_df = pd.DataFrame(all_comments)
+    # comments_df = pd.DataFrame(all_comments)
 
     # Save the DataFrame to a CSV file
-    filepath = r"../data/yt_comments.csv"
-    comments_df.to_csv(filepath , index= True)
-    return comments_df
+    filepath = r"../../scraped_data/yt_data.json"
+    # Save the data to a JSON file
+    with open(filepath, 'w', encoding='utf-8') as json_file:
+        json.dump(all_comments, json_file, ensure_ascii=False, indent=4)
+
+    print(f"Data has been saved to {filepath}")
 
 if __name__ == "__main__":
-    query = input("Enter a search query: ")
+    query = "news about trump"
     get_yt_data(query)
-    print(f"Comments saved to yt_comments_data.csv")
+    print(f"Comments saved to yt_data.json")

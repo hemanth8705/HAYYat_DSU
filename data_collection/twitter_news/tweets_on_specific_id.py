@@ -67,7 +67,7 @@ else:
     save_cookies(driver, cookie_file)
 
 # Step 1: Define the profile username
-profile_username = 'tarak9999'  # Replace with the desired username
+profile_username = 'elonmusk'  # Replace with the desired username
 
 # Step 2: Navigate to the user's profile
 driver.get(f'https://x.com/{profile_username}')
@@ -120,18 +120,19 @@ for tweet_id in tweet_ids:
 
     # Extract comments (and potentially replies)
     comments = driver.find_elements(By.XPATH, '//div[@data-testid="tweetText"]')
-    tweet_comments = [comment.text.strip() for comment in comments]
+    tweet_comments = [[comment.text.strip()] for comment in comments]
     
     print(f"Comments for Tweet {tweet_id}: {tweet_comments}")
     
     # Append tweet comments to the main list as a dictionary
     all_comments.append({
         "tweet_url": tweet_url,
-        "tweet_text": tweet_comments,
+        "comments": tweet_comments,
     })
 
 # Step 5: Save comments to JSON
-with open('../data/tweets_on_id.json', 'w', encoding='utf-8') as json_file:
+file_path = r"../../scraped_data/tweets_on_id.json"
+with open(file_path, 'w', encoding='utf-8') as json_file:
     json.dump(all_comments, json_file, ensure_ascii=False, indent=4)
 
 # Close the browser

@@ -30,7 +30,7 @@ def get_full_article(link):
         print(f"General error: {e}")
         return None  # Return None for general errors
 
-def bing_news_scraper(query, max_articles=70):
+def bing_news_scraper(query, max_articles=7):
     news_data = []
     count = 0
     offset = 0  # Starting point for pagination

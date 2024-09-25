@@ -119,7 +119,7 @@ for tweet_element in tweet_elements:
         continue
 
 # Step 3: Save the output to a JSON file
-output_filename = '../data/tweets_on_search.json'
+output_filename = r"../../scraped_data/news_articles.csv"
 with open(output_filename, 'w', encoding='utf-8') as json_file: 
     json.dump(tweet_data, json_file, ensure_ascii=False, indent=4)
 
