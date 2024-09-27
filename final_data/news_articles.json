@@ -1,8 +1,422 @@
 [
     {
-        "url": "https://www.freepressjournal.in/india/bengaluru-weather-for-september-25",
-        "headline": "Bengaluru Weather Update: IMD Predicts Moderate Rainfall, Minimum Temperature To Hover Around 20\u00b0C",
+        "url": "https://www.tribuneindia.com/news/haryana/bjp-made-farmers-urjadata-nitin-gadkari/",
+        "headline": "BJP made farmers \u2018urjadata\u2019: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.09
+    },
+    {
+        "url": "https://www.daijiworld.com/news/newsDisplay?newsID=1229943",
+        "headline": "BJP gave priority to infrastructure under Modi govt: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.01
+    },
+    {
+        "url": "https://www.tribuneindia.com/news/india/nitin-gadkari-ruler-in-democracy-must-tolerate-dissent/",
+        "headline": "Nitin Gadkari: Ruler in democracy must tolerate dissent",
+        "sentiment": "Positive",
+        "intensity": 0.17
+    },
+    {
+        "url": "https://news.abplive.com/videos/news/india-why-nitin-gadkari-acknowledged-public-frustration-over-delays-in-the-mumbai-goa-project-and-agreed-it-s-justified-paisa-live-1719295",
+        "headline": "Why Nitin Gadkari Acknowledged Public Frustration Over Delays In The Mumbai-Goa Project And Agreed It\u2019s Justified | Paisa Live",
+        "sentiment": "Positive",
+        "intensity": 0.09
+    },
+    {
+        "url": "https://www.tribuneindia.com/news/india/nitin-gadkari-ruler-in-democracy-must-tolerate-dissent/",
+        "headline": "Nitin Gadkari: Ruler in democracy must tolerate dissent",
+        "sentiment": "Positive",
+        "intensity": 0.17
+    },
+    {
+        "url": "https://www.theweek.in/news/india/2024/09/15/nitin-gadkari-was-asked-if-he-wanted-to-become-the-prime-minister-his-reply-was.html",
+        "headline": "Nitin Gadkari was asked if he wanted to become the Prime Minister. His reply was...",
+        "sentiment": "Positive",
+        "intensity": 0.09
+    },
+    {
+        "url": "https://news.abplive.com/videos/news/india-why-nitin-gadkari-acknowledged-public-frustration-over-delays-in-the-mumbai-goa-project-and-agreed-it-s-justified-paisa-live-1719295",
+        "headline": "Why Nitin Gadkari Acknowledged Public Frustration Over Delays In The Mumbai-Goa Project And Agreed It\u2019s Justified | Paisa Live",
+        "sentiment": "Positive",
+        "intensity": 0.09
+    },
+    {
+        "url": "https://www.theweek.in/news/india/2024/09/15/nitin-gadkari-was-asked-if-he-wanted-to-become-the-prime-minister-his-reply-was.html",
+        "headline": "Nitin Gadkari was asked if he wanted to become the Prime Minister. His reply was...",
+        "sentiment": "Positive",
+        "intensity": 0.09
+    },
+    {
+        "url": "https://www.timesnownews.com/india/nitin-gadkaris-pm-post-claim-opposition-says-well-played-but-its-a-message-for-modiji-article-113366061",
+        "headline": "Nitin Gadkari's 'PM Post' Claim: Opposition Says 'Well Played' But It's A 'Message For Modiji'",
+        "sentiment": "Positive",
+        "intensity": 0.2
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/india/nitin-gadkari-on-caste-politics-those-who-cant-win-elections-12823426.html",
+        "headline": "Nitin Gadkari on caste politics: \u2018Those who can't win elections\u2026\u2019",
+        "sentiment": "Positive",
+        "intensity": 0.12
+    },
+    {
+        "url": "https://www.news18.com/politics/no-offer-can-tempt-me-nitin-gadkari-reveals-he-rejected-prime-ministerial-offer-from-opposition-leader-9051376.html",
+        "headline": "'No Offer Can Tempt Me': Nitin Gadkari Reveals He Rejected Prime Ministerial Offer From Opposition Leader",
+        "sentiment": "Positive",
+        "intensity": 0.15
+    },
+    {
+        "url": "https://news24online.com/india/was-nitin-gadkari-offered-pms-post-ahead-of-2024-polls-union-minister-makes-big-revelation/332797/",
+        "headline": "Was Nitin Gadkari Offered PM\u2019s Post Ahead Of 2024 Polls? Union Minister Makes BIG Revelation",
+        "sentiment": "Positive",
+        "intensity": 0.08
+    },
+    {
+        "url": "https://www.financialexpress.com/business/roadways-nitin-gadkari-issues-warning-to-contractors-over-poor-maintenance-of-roads-says-we-will-not-spare-you-3614240/",
+        "headline": "Nitin Gadkari issues warning to contractors over poor maintenance of roads, says \u2018we will not spare you\u2019",
         "sentiment": "Negative",
-        "intensity": 0
+        "intensity": -0.1
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/politics/becoming-pm-never-been-my-aim-says-nitin-gadkari-12823216.html",
+        "headline": "Becoming PM never been my aim, says Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.12
+    },
+    {
+        "url": "https://news.abplive.com/news/india/nitin-gadkari-was-offered-prime-minister-post-by-opposition-leader-during-lok-sabha-1717332",
+        "headline": "'If You Are Going To Become PM...': Nitin Gadkari Reveals Oppn Leader's Offer During Lok Sabha Polls",
+        "sentiment": "Positive",
+        "intensity": 0.1
+    },
+    {
+        "url": "https://www.ptcnews.tv/nation/nitin-gadkari-reveals-he-declined-offer-of-support-for-prime-ministerial-candidacy-4397857",
+        "headline": "Nitin Gadkari :' I declined offer for PM post because...'",
+        "sentiment": "Positive",
+        "intensity": 0.1
+    },
+    {
+        "url": "https://www.udayavani.com/english-news/test-of-democracy-is-king-tolerates-dissent-introspects-nitin-gadkari",
+        "headline": "Test of democracy is king tolerates dissent, introspects: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.13
+    },
+    {
+        "url": "https://www.news18.com/india/new-14-lane-road-near-atal-setu-will-ease-traffic-congestion-on-mumbai-pune-expressway-by-50-nitin-gadkari-9051951.html",
+        "headline": "New 14-Lane Road Near Atal Setu Will Ease Traffic Congestion On Mumbai-Pune Expressway By 50%: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.07
+    },
+    {
+        "url": "https://www.financialexpress.com/india-news/democracys-strength-lies-in-tolerating-strong-criticism-and-promoting-open-dialogue-saysnbspnitin-gadkari/3617469/",
+        "headline": "Democracy\u2019s strength lies in tolerating strong criticism and promoting open dialogue, says Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.07
+    },
+    {
+        "url": "https://www.ndtv.com/india-news/we-will-not-spare-you-nitin-gadkari-warns-contractors-over-poor-roads-6587108",
+        "headline": "\"We Will Not Spare You\": Nitin Gadkari Warns Contractors Over Poor Roads",
+        "sentiment": "Negative",
+        "intensity": -0.13
+    },
+    {
+        "url": "https://odishatv.in/news/politics/opposition-leader-offered-to-back-me-as-pm-i-refused-nitin-gadkari-244182",
+        "headline": "Opposition leader offered to back me as PM, I refused: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.15
+    },
+    {
+        "url": "https://www.india.com/news/",
+        "headline": "News",
+        "sentiment": "Positive",
+        "intensity": 0.04
+    },
+    {
+        "url": "https://www.business-standard.com/education/news/road-accidents-causing-19-deaths-every-hour-nitin-gadkari-raises-alarm-124091000978_1.html",
+        "headline": "Road accidents causing 19 deaths every hour; Nitin Gadkari raises alarm",
+        "sentiment": "Positive",
+        "intensity": 0.33
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/business/did-nitin-gadkari-take-a-dig-at-indias-largest-carmaker-for-dragging-its-feet-on-evs-12817492.html",
+        "headline": "Did Nitin Gadkari take a dig at India's largest carmaker for dragging its feet on EVs?",
+        "sentiment": "Positive",
+        "intensity": 0.25
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/business/nitin-gadkari-backs-gas-economy-over-diesel-12818478.html",
+        "headline": "Appeal truck makers to replace diesel with gas-based fuels, says Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.14
+    },
+    {
+        "url": "https://pragativadi.com/nitin-gadkari-raises-alarm-over-road-safety/",
+        "headline": "Nitin Gadkari raises alarm over road safety",
+        "sentiment": "Positive",
+        "intensity": 0.18
+    },
+    {
+        "url": "https://money.rediff.com/news/market/nitin-gadkari-auto-industry-needs-focus-on-customer-service-after-sales/15562620240911",
+        "headline": "Nitin Gadkari: Auto Industry Needs Focus on Customer Service, After-sales",
+        "sentiment": "Positive",
+        "intensity": 0.18
+    },
+    {
+        "url": "https://www.cnbctv18.com/auto/nitin-gadkari-calls-for-auto-industry-overhaul-in-customer-service-eyes-green-future-19474684.htm",
+        "headline": "Nitin Gadkari calls for auto industry overhaul in customer service, eyes green future",
+        "sentiment": "Negative",
+        "intensity": 0.0
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/india/road-ministry-to-award-contracts-worth-over-rs-3-lakh-crore-in-fy25-nitin-gadkari-12823227.html",
+        "headline": "Road ministry to award contracts worth over Rs 3 lakh crore in FY25: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.11
+    },
+    {
+        "url": "https://www.timesnownews.com/auto/auto-industry-needs-to-focus-on-customer-service-after-sales-quality-assurance-nitin-gadkari-article-113260373",
+        "headline": "Auto Industry Needs to Focus On Customer Service, After-Sales, Quality Assurance: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.32
+    },
+    {
+        "url": "https://zeenews.india.com/india/no-flight-from-delhi-to-dehradun-jaipur-and-chandigarh-from-january-nitin-gadkaris-highway-plans-a-trouble-for-airlines-2783876.html",
+        "headline": "Nitin Gadkari's Highway Plans May Spell Trouble For Airlines On These Routes",
+        "sentiment": "Positive",
+        "intensity": 0.1
+    },
+    {
+        "url": "https://www.ndtv.com/india-news/nitin-gadkari-favours-majority-stake-for-foreign-firms-in-tunnel-construction-6481344",
+        "headline": "Nitin Gadkari Favours Majority Stake For Foreign Firms In Tunnel Construction",
+        "sentiment": "Positive",
+        "intensity": 0.02
+    },
+    {
+        "url": "https://www.ndtv.com/india-news/nitin-gadkari-favours-majority-stake-for-foreign-firms-in-tunnel-construction-6481344",
+        "headline": "Nitin Gadkari Favours Majority Stake For Foreign Firms In Tunnel Construction",
+        "sentiment": "Positive",
+        "intensity": 0.02
+    },
+    {
+        "url": "https://www.ndtv.com/india-news/nitin-gadkari-identifies-culprits-behind-shoddy-infra-projects-6490574",
+        "headline": "Nitin Gadkari Identifies \"Culprits\" Behind Shoddy Infra Projects",
+        "sentiment": "Positive",
+        "intensity": 0.1
+    },
+    {
+        "url": "https://www.business-standard.com/industry/news/nitin-gadkari-backs-51-stake-to-foreign-partners-in-jv-tunnel-projects-124090300828_1.html",
+        "headline": "Nitin Gadkari backs 51% stake to foreign partners in JV tunnel projects",
+        "sentiment": "Positive",
+        "intensity": 0.13
+    },
+    {
+        "url": "https://www.ndtv.com/india-news/nitin-gadkari-identifies-culprits-behind-shoddy-infra-projects-6490574",
+        "headline": "Nitin Gadkari Identifies \"Culprits\" Behind Shoddy Infra Projects",
+        "sentiment": "Positive",
+        "intensity": 0.1
+    },
+    {
+        "url": "https://www.business-standard.com/industry/news/nitin-gadkari-backs-51-stake-to-foreign-partners-in-jv-tunnel-projects-124090300828_1.html",
+        "headline": "Nitin Gadkari backs 51% stake to foreign partners in JV tunnel projects",
+        "sentiment": "Positive",
+        "intensity": 0.13
+    },
+    {
+        "url": "https://www.business-standard.com/india-news/nitin-gadkari-asks-state-fm-s-to-reduce-gst-on-flex-fuel-vehicles-to-12-124090200590_1.html",
+        "headline": "Nitin Gadkari asks state FM's to reduce GST on flex-fuel vehicles to 12%",
+        "sentiment": "Positive",
+        "intensity": 0.33
+    },
+    {
+        "url": "https://www.ndtv.com/business-news/nitin-gadkari-wants-states-to-consider-cutting-gst-on-flex-fuel-vehicles-6472667",
+        "headline": "Nitin Gadkari Wants States To Consider Cutting GST On Flex-Fuel Vehicles",
+        "sentiment": "Positive",
+        "intensity": 0.12
+    },
+    {
+        "url": "https://www.india.com/news/india/development-of-roads-bring-industries-increases-employment-says-nitin-gadkari-at-zee-news-ek-bharat-shreshtha-bharat-programme-7198451/",
+        "headline": "Development of Roads Bring Industries, Increases Employment; Says Nitin Gadkari At Zee News\u2019 \u2018Ek Bharat Shreshtha Bharat\u2019 Programme",
+        "sentiment": "Positive",
+        "intensity": 0.1
+    },
+    {
+        "url": "https://www.newsbytesapp.com/news/politics/nitin-gadkari",
+        "headline": "Nitin Gadkari: News",
+        "sentiment": "Positive",
+        "intensity": 0.13
+    },
+    {
+        "url": "https://www.business-standard.com/education/news/road-accidents-causing-19-deaths-every-hour-nitin-gadkari-raises-alarm-124091000978_1.html",
+        "headline": "Road accidents causing 19 deaths every hour; Nitin Gadkari raises alarm",
+        "sentiment": "Positive",
+        "intensity": 0.33
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/business/nitin-gadkari-backs-gas-economy-over-diesel-12818478.html",
+        "headline": "Appeal truck makers to replace diesel with gas-based fuels, says Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.14
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/business/did-nitin-gadkari-take-a-dig-at-indias-largest-carmaker-for-dragging-its-feet-on-evs-12817492.html",
+        "headline": "Did Nitin Gadkari take a dig at India's largest carmaker for dragging its feet on EVs?",
+        "sentiment": "Positive",
+        "intensity": 0.25
+    },
+    {
+        "url": "https://pragativadi.com/nitin-gadkari-raises-alarm-over-road-safety/",
+        "headline": "Nitin Gadkari raises alarm over road safety",
+        "sentiment": "Positive",
+        "intensity": 0.18
+    },
+    {
+        "url": "https://money.rediff.com/news/market/nitin-gadkari-auto-industry-needs-focus-on-customer-service-after-sales/15562620240911",
+        "headline": "Nitin Gadkari: Auto Industry Needs Focus on Customer Service, After-sales",
+        "sentiment": "Positive",
+        "intensity": 0.18
+    },
+    {
+        "url": "https://www.cnbctv18.com/auto/nitin-gadkari-calls-for-auto-industry-overhaul-in-customer-service-eyes-green-future-19474684.htm",
+        "headline": "Nitin Gadkari calls for auto industry overhaul in customer service, eyes green future",
+        "sentiment": "Negative",
+        "intensity": 0.0
+    },
+    {
+        "url": "https://www.timesnownews.com/auto/auto-industry-needs-to-focus-on-customer-service-after-sales-quality-assurance-nitin-gadkari-article-113260373",
+        "headline": "Auto Industry Needs to Focus On Customer Service, After-Sales, Quality Assurance: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.32
+    },
+    {
+        "url": "https://www.cartoq.com/car-news/nitin-gadkari-10-years-transforming-india-roadways/",
+        "headline": "Ten Years of Nitin Gadkari \u2013 Who Next?",
+        "sentiment": "Positive",
+        "intensity": 0.11
+    },
+    {
+        "url": "https://www.cinejosh.com/tag/1/1/nithin-follows-ishq-sentiment.html",
+        "headline": "Nithin-follows-ishq-sentiment News",
+        "sentiment": "Positive",
+        "intensity": 0.16
+    },
+    {
+        "url": "https://www.cartoq.com/car-news/nitin-gadkari-10-years-transforming-india-roadways/",
+        "headline": "Ten Years of Nitin Gadkari \u2013 Who Next?",
+        "sentiment": "Positive",
+        "intensity": 0.11
+    },
+    {
+        "url": "https://www.business-standard.com/education/news/road-accidents-causing-19-deaths-every-hour-nitin-gadkari-raises-alarm-124091000978_1.html",
+        "headline": "Road accidents causing 19 deaths every hour; Nitin Gadkari raises alarm",
+        "sentiment": "Positive",
+        "intensity": 0.33
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/business/nitin-gadkari-backs-gas-economy-over-diesel-12818478.html",
+        "headline": "Appeal truck makers to replace diesel with gas-based fuels, says Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.14
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/business/did-nitin-gadkari-take-a-dig-at-indias-largest-carmaker-for-dragging-its-feet-on-evs-12817492.html",
+        "headline": "Did Nitin Gadkari take a dig at India's largest carmaker for dragging its feet on EVs?",
+        "sentiment": "Positive",
+        "intensity": 0.25
+    },
+    {
+        "url": "https://pragativadi.com/nitin-gadkari-raises-alarm-over-road-safety/",
+        "headline": "Nitin Gadkari raises alarm over road safety",
+        "sentiment": "Positive",
+        "intensity": 0.18
+    },
+    {
+        "url": "https://www.cnbctv18.com/auto/nitin-gadkari-calls-for-auto-industry-overhaul-in-customer-service-eyes-green-future-19474684.htm",
+        "headline": "Nitin Gadkari calls for auto industry overhaul in customer service, eyes green future",
+        "sentiment": "Negative",
+        "intensity": 0.0
+    },
+    {
+        "url": "https://www.timesnownews.com/auto/auto-industry-needs-to-focus-on-customer-service-after-sales-quality-assurance-nitin-gadkari-article-113260373",
+        "headline": "Auto Industry Needs to Focus On Customer Service, After-Sales, Quality Assurance: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.32
+    },
+    {
+        "url": "https://www.business-standard.com/education/news/road-accidents-causing-19-deaths-every-hour-nitin-gadkari-raises-alarm-124091000978_1.html",
+        "headline": "Road accidents causing 19 deaths every hour; Nitin Gadkari raises alarm",
+        "sentiment": "Positive",
+        "intensity": 0.33
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/business/nitin-gadkari-backs-gas-economy-over-diesel-12818478.html",
+        "headline": "Appeal truck makers to replace diesel with gas-based fuels, says Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.14
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/business/did-nitin-gadkari-take-a-dig-at-indias-largest-carmaker-for-dragging-its-feet-on-evs-12817492.html",
+        "headline": "Did Nitin Gadkari take a dig at India's largest carmaker for dragging its feet on EVs?",
+        "sentiment": "Positive",
+        "intensity": 0.25
+    },
+    {
+        "url": "https://pragativadi.com/nitin-gadkari-raises-alarm-over-road-safety/",
+        "headline": "Nitin Gadkari raises alarm over road safety",
+        "sentiment": "Positive",
+        "intensity": 0.18
+    },
+    {
+        "url": "https://money.rediff.com/news/market/nitin-gadkari-auto-industry-needs-focus-on-customer-service-after-sales/15562620240911",
+        "headline": "Nitin Gadkari: Auto Industry Needs Focus on Customer Service, After-sales",
+        "sentiment": "Positive",
+        "intensity": 0.18
+    },
+    {
+        "url": "https://www.cnbctv18.com/auto/nitin-gadkari-calls-for-auto-industry-overhaul-in-customer-service-eyes-green-future-19474684.htm",
+        "headline": "Nitin Gadkari calls for auto industry overhaul in customer service, eyes green future",
+        "sentiment": "Negative",
+        "intensity": 0.0
+    },
+    {
+        "url": "https://www.timesnownews.com/auto/auto-industry-needs-to-focus-on-customer-service-after-sales-quality-assurance-nitin-gadkari-article-113260373",
+        "headline": "Auto Industry Needs to Focus On Customer Service, After-Sales, Quality Assurance: Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.32
+    },
+    {
+        "url": "https://www.newsbytesapp.com/news/politics/nitin-gadkari",
+        "headline": "Nitin Gadkari: News",
+        "sentiment": "Positive",
+        "intensity": 0.13
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/tags/nitin-gadkari-threat-call.html",
+        "headline": "Nitin Gadkari Threat Call",
+        "sentiment": "Positive",
+        "intensity": 0.23
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/tags/nitin-gadkari.-road-accident.html",
+        "headline": "Nitin Gadkari. Road Accident",
+        "sentiment": "Positive",
+        "intensity": 0.15
+    },
+    {
+        "url": "https://www.business-standard.com/topic/nitin-gadkari",
+        "headline": "Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.04
+    },
+    {
+        "url": "https://www.firstpost.com/tag/nitin-gadkari/",
+        "headline": "Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.05
+    },
+    {
+        "url": "https://www.moneycontrol.com/news/tags/road-and-national-highways-nitin-gadkari.html",
+        "headline": "Road And National Highways Nitin Gadkari",
+        "sentiment": "Positive",
+        "intensity": 0.18
     }
 ]
