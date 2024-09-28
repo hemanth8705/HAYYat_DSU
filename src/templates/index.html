@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="{{ url_for('static', filename='5905282-hd_1920_1080_24fps.mp4') }}" type="video/mp4">
+    </video>
+
+    <!-- HAYYat animated title -->
+    <div class="title">
+        <h1>HAYYat</h1>
+    </div>
+
+    <!-- Search form -->
+    <div class="container">
+        <div class="search-form">
+            <input type="text" id="generalSearch" placeholder="Enter General Search" required>
+            <input type="text" id="twitterSearch" placeholder="Enter Twitter Search" required>
+            <button id="searchButton">Search</button>
+        </div>
+    </div>
+
+    <!-- Script for the search form -->
+    <script>
+        document.getElementById('searchButton').addEventListener('click', () => {
+            const generalSearch = document.getElementById('generalSearch').value;
+            const twitterSearch = document.getElementById('twitterSearch').value;
+
+            // Redirect to the results page with the search parameters
+            window.location.href = `/results.html?generalSearch=${encodeURIComponent(generalSearch)}&twitterSearch=${encodeURIComponent(twitterSearch)}`;
+        });
+    </script>
+
+</body>
+
+</html>

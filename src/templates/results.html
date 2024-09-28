@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='resultss.css') }}">
+    <style>
+        /* Styles for card layout and animations */
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-body {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .sentiment {
+            font-weight: bold;
+        }
+
+        .animated-percentage {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .animated-fill {
+            height: 100%;
+            background-color: #4CAF50;
+            animation: fill 2s forwards;
+        }
+
+        @keyframes fill {
+            from {
+                width: 0;
+            }
+            to {
+                width: var(--percentage);
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Custom classes for sentiment sections */
+        .positive {
+            color: green;
+        }
+
+        .negative {
+            color: red;
+        }
+
+        /* Hide comment list initially */
+        .comments-list {
+            display: none;
+        }
+
+        /* Button style for view comments */
+        .view-comments-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .view-comments-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Search Results</h1>
+
+        <!-- Loading Bars for each section -->
+        <!-- <div class="section">
+            <h2>News Articles</h2>
+            <div id="articlesLoading" class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+            <button id="viewArticles" class="view-results-btn" disabled>View Results</button>
+            <div id="articlesContainer" class="row" style="display: none;"></div>
+        </div>
+
+        <div class="section">
+            <h2>Twitter ID</h2>
+            <div id="twitterIdLoading" class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+            <button id="viewTwitterId" class="view-results-btn" disabled>View Results</button>
+            <div id="twitterIdContainer" class="row" style="display: none;"></div>
+        </div> -->
+
+        <div class="section">
+            <h2>Twitter Search</h2>
+            <div id="twitterSearchLoading" class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+            <button id="viewTwitterSearch" class="view-results-btn" disabled>View Results</button>
+            <div id="twitterSearchContainer" class="row" style="display: none;"></div>
+        </div>
+
+        <div class="section">
+            <h2>YouTube</h2>
+            <div id="youtubeLoading" class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+            <button id="viewYouTube" class="view-results-btn" disabled>View Results</button>
+            <div id="youtubeContainer" class="row" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const generalSearch = urlParams.get('generalSearch');
+        const twitterSearch = urlParams.get('twitterSearch');
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Fetch all sections in parallel
+            const articlesPromise = loadSection('articles', generalSearch, twitterSearch, 'articlesLoading', 'viewArticles', 'articlesContainer');
+            const twitterIdPromise = loadSection('twitter_id', generalSearch, twitterSearch, 'twitterIdLoading', 'viewTwitterId', 'twitterIdContainer');
+            const twitterSearchPromise = loadSection('twitter_search', generalSearch, twitterSearch, 'twitterSearchLoading', 'viewTwitterSearch', 'twitterSearchContainer');
+            const youtubePromise = loadSection('youtube', generalSearch, twitterSearch, 'youtubeLoading', 'viewYouTube', 'youtubeContainer');
+
+            // Wait for all sections to load in parallel
+            await Promise.all([articlesPromise, twitterIdPromise, twitterSearchPromise, youtubePromise]);
+        });
+
+        async function loadSection(section, generalSearch, twitterSearch, loadingId, buttonId, containerId) {
+            try {
+                const response = await fetch(`/search/${section}/${generalSearch}/${twitterSearch}`);
+                const data = await response.json();
+
+                console.log(data); // Log the data to ensure it has the correct structure
+
+                if (data.results && data.results.length > 0) {
+                    document.getElementById(loadingId).style.display = 'none'; // Hide loading bar
+                    document.getElementById(buttonId).disabled = false; // Enable "View Results" button
+
+                    document.getElementById(buttonId).addEventListener('click', () => {
+                        document.getElementById(containerId).innerHTML = ''; // Clear previous results
+                        data.results.forEach(item => {
+                            createCard(item, section, containerId);
+                        });
+                        document.getElementById(containerId).style.display = 'flex'; // Show container
+                        document.getElementById(containerId).style.opacity = 0; // Set initial opacity for fade-in
+                        fadeIn(containerId); // Fade in the results
+                    });
+                } else {
+                    console.warn(`No results found for ${section}.`);
+                }
+            } catch (error) {
+                console.error(`Error loading ${section}:`, error);
+            }
+        }
+
+        function createCard(item, section, containerId) {
+            const card = document.createElement('div');
+            card.classList.add('card');
+
+            if (section === 'articles') {
+                card.innerHTML = `
+                    <div class="card-header">${item.headline}</div>
+                    <div class="card-body sentiment">${item.sentiment} : ${item.intensity}</div>
+                    <div class="animated-percentage">
+                        <div class="animated-fill" style="--percentage: ${item.intensity}%"></div>
+                    </div>
+                    <a href="${item.url}" target="_blank">Read More</a>
+                `;
+            } else if (section === 'twitter_id') {
+                // Create the comment list but hide it initially
+                const commentsList = item.comments.map(comment => `
+                    <li>
+                        <div>${comment[0]}</div>
+                        <div class="sentiment">${comment[1][0]} - Intensity: ${comment[1][1]}</div>
+                    </li>
+                `).join('');
+
+                // Card content displaying only positive/negative analysis
+                card.innerHTML = `
+                    <div class="card-header"><a href="${item.tweet_url}" target="_blank">Tweet</a></div>
+                    <div class="card-body sentiment">
+                        Positive Comments: ${item.positive_comments}% | Negative Comments: ${item.negative_comments}%
+                    </div>
+                    <button class="view-comments-btn" onclick="toggleComments(this)">View Comments</button>
+                    <ul class="comments-list">${commentsList}</ul>
+                `;
+            } else if (section === 'twitter_search') {
+                card.innerHTML = `
+                    <div class="card-header"><a href="${item.url}" target="_blank">@${item.user_id}</a></div>
+                    <div class="card-body">${item.tweet}</div>
+                    <div class="card-body sentiment">${item.sentiment} : ${item.intensity}</div>
+                `;
+            } else if (section === 'youtube') {
+                const youtubeUrl = `https://www.youtube.com/watch?v=${item.VideoID}`;
+                const thumbnailUrl = `https://img.youtube.com/vi/${item.VideoID}/0.jpg`;
+                
+                card.innerHTML = `
+                    <div class="card-header">
+                        <img src="${thumbnailUrl}" alt="Thumbnail" width="100%">
+                    </div>
+                    <div class="card-body sentiment"> ${item.sentiment} : ${item.intensity} </div>
+                    <div class="animated-percentage">
+                        <div class="animated-fill" style="--percentage: ${item.intensity}%"></div>
+                    </div>
+                    <div class="card-body">Positive comments: ${item.positive_comments}% | Negative comments: ${item.negative_comments}%</div>
+                    <a href="${youtubeUrl}" target="_blank">Watch Video</a>
+                `;
+            }
+
+            document.getElementById(containerId).appendChild(card);
+        }
+
+        function toggleComments(button) {
+            const commentsList = button.nextElementSibling;
+            if (commentsList.style.display === 'none') {
+                commentsList.style.display = 'block';
+                button.textContent = 'Hide Comments';
+            } else {
+                commentsList.style.display = 'none';
+                button.textContent = 'View Comments';
+            }
+        }
+
+        function fadeIn(containerId) {
+            let opacity = 0;
+            const element = document.getElementById(containerId);
+            const interval = setInterval(() => {
+                if (opacity >= 1) {
+                    clearInterval(interval);
+                } else {
+                    opacity += 0.05;
+                    element.style.opacity = opacity;
+                }
+            }, 50);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+/* Fullscreen Video Background */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Place behind content */
+}
+
+/* Animated Title */
+.title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    animation: fadeInDown 2s ease-in-out;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container for search form */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+/* Small-sized search form inputs */
+.search-form input {
+    width: 25%; /* Reduced width from 50% to 25% */
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.search-form input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.search-form input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Button size and appearance */
+.search-form button {
+    width: 20%; /* Slightly smaller button width */
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+.search-form button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-form input, .search-form button {
+        width: 70%; /* Adjust width for smaller screens */
+        margin-bottom: 15px;
+    }
+}

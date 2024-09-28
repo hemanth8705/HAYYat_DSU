@@ -1,0 +1,27 @@
+[
+    {
+        "user_id": "Jo Kar",
+        "url": "https://x.com/i_am_gustakh/status/1839354838678970445",
+        "tweet": "Persons behind Beer Biceps YouTube channel hacking....",
+        "sentiment": "Negative",
+        "intensity": -0.4
+    },
+    {
+        "user_id": "Saharsh",
+        "url": "https://x.com/whysaharsh/status/1839190616032301530",
+        "tweet": "youtube channel of beer biceps has been hacked and all the videos have been deleted",
+        "sentiment": "Negative",
+        "intensity": 0.0
+    },
+    {
+        "user_id": "Hertz",
+        "url": "https://x.com/engineeroast/status/1839307604503441662",
+        "tweet": "Scenes after Ranveer Allahbadia aka Beer Biceps, had his channel hacked and deleted.",
+        "sentiment": "Negative",
+        "intensity": 0.0
+    },
+    {
+        "positive_percentage": 0.0,
+        "negative_percentage": 100.0
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "url": "https://techstory.in/nikhil-kamath-fears-new-fo-rules-to-affect-zerodha-profits-by-30-50/",
+        "headline": "Nikhil Kamath fears new F&O rules to affect Zerodha profits by 30-50%",
+        "sentiment": "Negative",
+        "intensity": 0.54
+    },
+    {
+        "url": "https://www.fortuneindia.com/investing/zerodhas-fy24-profit-zooms-67-to4700-cr-but-ceo-warns-of-rough-days-ahead/118533",
+        "headline": "Zerodha\u2019s FY24 profit zooms 62% to \u20b94,700 cr but CEO warns of rough days ahead",
+        "sentiment": "Negative",
+        "intensity": 0.51
+    },
+    {
+        "url": "https://www.business-standard.com/companies/news/zerodha-customers-hold-over-rs-5-66-trillion-in-demat-accounts-kamath-124092500575_1.html",
+        "headline": "Zerodha customers hold over Rs 5.66 trillion in demat accounts: Kamath",
+        "sentiment": "Positive",
+        "intensity": 0.33
+    },
+    {
+        "url": "https://www.fortuneindia.com/investing/zerodhas-fy24-profit-zooms-67-to4700-cr-but-ceo-warns-of-rough-days-ahead/118533",
+        "headline": "Zerodha\u2019s FY24 profit zooms 62% to \u20b94,700 cr but CEO warns of rough days ahead",
+        "sentiment": "Negative",
+        "intensity": 0.51
+    },
+    {
+        "url": "https://www.financialexpress.com/business/industry-zerodha-achieves-rs-8320-crore-revenue-in-fy24-nithin-kamath-warns-about-big-revenue-hit-later-this-year-3621385/",
+        "headline": "Zerodha achieves Rs 8,320 crore revenue in FY24: Nithin Kamath warns about \u2018big revenue hit\u2019 later this year",
+        "sentiment": "Negative",
+        "intensity": 0.42
+    },
+    {
+        "url": "https://techstory.in/nikhil-kamath-fears-new-fo-rules-to-affect-zerodha-profits-by-30-50/",
+        "headline": "Nikhil Kamath fears new F&O rules to affect Zerodha profits by 30-50%",
+        "sentiment": "Negative",
+        "intensity": 0.54
+    },
+    {
+        "url": "https://www.cartoq.com/bike-news/ather-energy-tarun-mehta-battery-subscriptions/",
+        "headline": "Ather Energy\u2019s Tarun Mehta Explains Why Battery Subscriptions Didn\u2019t Work For them",
+        "sentiment": "Negative",
+        "intensity": 0.42
+    },
+    {
+        "url": "https://www.news18.com/viral/nikhil-kamath-exploring-kriti-sanons-attachment-style-on-podcast-leaves-internet-puzzled-9028130.html",
+        "headline": "Nikhil Kamath Exploring Kriti Sanon\u2019s \u2018Attachment Style\u2019 on Podcast Leaves Internet With Questions",
+        "sentiment": "Positive",
+        "intensity": 0.67
+    },
+    {
+        "url": "https://glamsham.com/bollywood/news/rhea-chakraborty-sported-bike-rumored-boyfriend-nikhil-kamath-helmet-kaha-hain/",
+        "headline": "Rhea Chakraborty sported on a bike with rumored boyfriend, Nikhil Kamath; Fans troll her says, \u201cHelmet kaha hain?\u201d",
+        "sentiment": "Negative",
+        "intensity": 0.4
+    },
+    {
+        "url": "https://news.abplive.com/business/nikhil-kamath-surprises-netizens-and-attends-a-mushroom-walk-in-bengaluru-s-cubbon-park-see-what-happened-1712839",
+        "headline": "Nikhil Kamath Surprises Netizens And Attends A Mushroom Walk In Bengaluru\u2019s Cubbon Park, See What Happened",
+        "sentiment": "Positive",
+        "intensity": 0.67
+    }
+]
